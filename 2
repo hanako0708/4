@@ -1,0 +1,19 @@
+a= int(input())
+d=int(input())
+c=[]
+t=0
+k=0
+max1=[]
+for i in range(a):
+  b= input()
+  b=b.split(" ")
+  c.append(b)
+for i in range(d):
+  for k in range(d):
+    for j in range(d):
+      e=[]
+      e.append(c[0][i])
+      e.append(c[1][k])
+      e.append(c[2][j])
+      max1.append(min(e))
+print(max(max1))
