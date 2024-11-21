@@ -1,0 +1,13 @@
+num1 = []
+num2 = []
+result = 'False'
+for i in range(3):
+  num1.append(int(input()))
+  num2.append(int(input()))
+target = int(input('target : '))
+for i in num1:
+  for k in num2:
+    if i + k == target:
+      result = 'True'
+      break
+print(result)
